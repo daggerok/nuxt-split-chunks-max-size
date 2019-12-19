@@ -8,7 +8,7 @@ const isProd = process.env.NODE_ENV === 'production';
 
 export default {
   build: {
-    analyze: process.env.NODE_ENV === 'development',
+    analyze: !isProd,
     extend(config, { isClient }) {
       if (isProd && isClient) {
         config.optimization.splitChunks.maxSize = 249856; // 244 Kib
