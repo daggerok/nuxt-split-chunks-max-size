@@ -17,3 +17,5 @@ export default {
   },
 };
 ```
+
+see: https://webpack.js.org/plugins/split-chunks-plugin/
